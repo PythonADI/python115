@@ -11,6 +11,7 @@ print(screen_size, type(screen_size))
 for pixels in screen_size:
     print(pixels)
 
+
 # screen_size[0] = 1024
 # assignment operator
 screen_size = (3840, 2160)
