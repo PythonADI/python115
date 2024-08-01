@@ -20,6 +20,8 @@ person['name'] = 'Jane'
 
 # person.pop('name')
 # del person['age']
+# Key error when trying to pop non existent key
+# person.pop('father')
 
 person['friends'] = [
     'Jimmy', 'Jane', 'Jake'
@@ -44,7 +46,13 @@ for value in person.values():
 
 print('>>> Items <<<')
 for key, value in person.items():
+    # key, value = item
+    # print(item[0], item[1])
     print(key, value)
 
 # key error when you try to access undefiend key value pair
 # person['car']
+
+# unpack
+a, b = 5, 7
+print(person.items())
