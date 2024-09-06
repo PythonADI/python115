@@ -1,1 +1,40 @@
-Hello, World!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=viewport, initial-scale=1.0">
+    <title>
+        {% block title %}
+        {% endblock title %}
+    </title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #0e0e0e;
+            color: #fefefe;
+        }
+
+        .errors {
+            color: red;
+        }
+
+        .post {
+            padding: 2rem;
+            border: 1px solid #fefefe;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    {% block content %}
+
+    {% endblock content %}
+    
+</body>
+</html>

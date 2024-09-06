@@ -12,8 +12,16 @@
 [Django Forms](#django-forms)
 
 
+### Web Development
+- We need HTML, CSS, and JavaScript to create a web page.
+- We need a web server to serve the web page.
+- We need a database to store the data.
+    - [MySQL](https://www.mysql.com/), [PostgreSQL](https://www.postgresql.org/), [SQLite](https://www.sqlite.org/), [MongoDB](https://www.mongodb.com/), etc.
+- We need a server-side language to interact with the database.
+- We need a framework to make the development process easier.
+
 ### What is Django?
-Django is a high-level Python web framework that enables rapid development of secure and maintainable websites. Built by experienced developers, it takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel.
+[Django](https://www.djangoproject.com/) is a high-level Python web framework that enables rapid development of secure and maintainable websites. Built by experienced developers, it takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel.
 
 
 ### Why Django?

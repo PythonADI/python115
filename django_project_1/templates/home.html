@@ -5,6 +5,25 @@ Home
 {% endblock %}
 
 {% block content %}
-Hello, World!
+    <h1>Welcome to the Home Page</h1>
+    {% comment %} {{ posts }} {% endcomment %}
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div class="errors">
+            {{ form.errors }}
+        </div>
+        <button style="width: 100%; padding: 1rem; margin-bottom: 1rem;">
+            Add
+        </button>
+    </form>
+
+    {% for post in posts %}
+        <div class="post">
+            <h4>{{ post.title }}</h4>
+            <p>{{ post.content }}</p>
+        </div>
+    {% endfor %}
     {% comment %} <h1 style="color: red">Welcome to the Home Page</h1> {% endcomment %}
 {% endblock %}
