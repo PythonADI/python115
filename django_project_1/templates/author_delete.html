@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}
+Add new Author
+{% endblock %}
+
+{% block content %} 
+
+<form method="POST">
+    {% csrf_token %}
+    You are about to delete {{ author.name }}. Are you sure?
+    {{ form.as_p }}
+    <a href="{% url 'author_detail_view' author.pk %}">Cancel</a>
+    <button type="submit">Yes</button>
+</form>
+
+{% endblock %}

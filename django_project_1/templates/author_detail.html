@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}
+{{ author.name }}
+{% endblock %}
+
+{% block content %} 
+
+<a href="{% url 'author_update_view' author.pk %}">Edit</a>
+<a href="{% url 'author_delete_view' author.pk %}">Delete</a>
+
+
+<h3>{{ author.name }}</h3>
+
+<p>{{ author.age }}</p>
+
+{% endblock %}
